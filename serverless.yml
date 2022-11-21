@@ -21,5 +21,5 @@ functions:
     environment: ${file(env.yml)}
     events:
       # Invoke Lambda function (UTC-3:00)
-      # actual: cron(59 18 ? * SUN-FRI *) | testing: cron(0/10 18 ? * MON-SAT *)
-      - schedule: cron(59 18 ? * SUN-FRI *)
+      # actual: cron(59 18 ? * MON-FRI *) | testing: cron(0/10 18 ? * MON-SAT *)
+      - schedule: cron(59 18 ? * MON-FRI *)
